@@ -1,0 +1,87 @@
+*{
+    border: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+p{
+    font-size: larger;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+li{
+    list-style: none;
+}
+
+h1{
+    color: white;
+}
+
+h2{
+    color: white;
+}
+
+input{
+    outline: none;
+}
+
+body {
+    display: grid;
+    /* this 10 rem will remind me of that grid property */
+    /* grid-template-rows: 3.625rem auto; */
+    grid-template-rows: 5.8rem auto;
+    grid-template-areas: "nav" "main";
+    /* overflow: scroll; */
+    font-family: "Poppins", sans-serif;
+    background: black;
+}
+
+.main-nav{
+    grid-area: nav;
+}
+
+main{
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    overflow: hidden;
+}
+
+.main-nav_actual-container{
+    background-color: red;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* opacity: 0.1; */
+    border-bottom: 2px solid rgb(255, 255, 255);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.main-nav_container{
+    display: flex;
+}
+
+.main-nav_item{
+    padding: 0 2rem 0;
+}
+
+.main-div_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
